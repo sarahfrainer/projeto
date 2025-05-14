@@ -1,0 +1,25 @@
+* {
+    font-family: "Inter";
+    margin: 0px;
+}
+
+.titulo_2 {
+    font-family: 'Londrina Solid', cursive;
+    
+}
+
+.historias {
+    background-color: #FFDDC0;
+    padding: 30px;
+}
+
+.estatisticas {
+    background-color: #FFF2F2;
+    padding: 30px;
+}
+
+h2, h3, p {
+    padding: 10px;
+    color: #555086;
+}
+
