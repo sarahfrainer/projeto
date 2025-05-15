@@ -1,0 +1,129 @@
+/* Reset básico para margens, paddings e fonte */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background-color: #f3f0fa;
+    color: #22223b;
+}
+
+/* Navbar */
+nav {
+    background: linear-gradient(90deg, #4B0082 60%, #6A0DAD 100%);
+    padding: 12px 0;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(75, 0, 130, 0.08);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    letter-spacing: 0.5px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: #a084ca;
+    color: #4B0082;
+    box-shadow: 0 2px 8px rgba(106, 13, 173, 0.15);
+    outline: none;
+}
+
+/* Footer */
+footer {
+    background: #4B0082;
+    color: #fff;
+    text-align: right;
+    padding: 18px 24px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    letter-spacing: 0.3px;
+    box-shadow: 0 -2px 8px rgba(75, 0, 130, 0.08);
+}
+
+/* Grid de notícias */
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+    padding: 32px;
+    background: #f8f8ff;
+    border-radius: 16px;
+    margin: 32px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 24px rgba(106, 13, 173, 0.07);
+}
+
+/* Cartão de notícia */
+.noticia {
+    background: linear-gradient(135deg, #6A0DAD 80%, #a084ca 100%);
+    color: #fff;
+    border-radius: 12px;
+    padding: 22px 20px 18px 20px;
+    box-shadow: 0 2px 8px rgba(106, 13, 173, 0.13);
+    transition: transform 0.25s, box-shadow 0.25s;
+    position: relative;
+    overflow: hidden;
+}
+
+.noticia:hover,
+.noticia:focus-within {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 24px rgba(75, 0, 130, 0.18);
+    cursor: pointer;
+}
+
+.noticia h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-shadow: 0 1px 2px rgba(75, 0, 130, 0.08);
+}
+
+.noticia p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+    color: #f3f0fa;
+}
+
+/* Responsividade extra */
+@media (max-width: 600px) {
+    .noticias {
+        padding: 12px;
+        gap: 14px;
+        margin: 12px;
+    }
+    .noticia {
+        padding: 14px 10px 12px 10px;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    footer {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+}
