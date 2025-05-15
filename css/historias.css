@@ -23,3 +23,37 @@ h2, h3, p {
     color: #555086;
 }
 
+#titulo_historias {
+    margin-bottom: 40px;
+}
+
+.flexbox {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      
+      .box {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        text-align: center;    
+      }
+      
+      .box img {
+        width: auto;
+        height: 200px;
+        border-radius: 20px;
+        border: 10px solid black;
+        margin-bottom: 12px;
+      }
+      
+      .box h3 {
+        font-size: 20px;
+        font-family: "Inter";
+      }
+      
+      .box p {
+        font-size: 14px;
+        max-width: 90%;
+      }
