@@ -1,0 +1,384 @@
+/*USO GERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff2f2;
+  font-family: "Londrina Solid", sans-serif;
+}
+
+/*BARRA NAV*/
+nav {
+  background-color: #524d7d;
+  border-bottom: 5px solid #a076f9;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 16.35vh;
+}
+
+.nav-logo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 26px;
+  position: relative;
+}
+
+.nav-links a:hover {
+  background-color: #fff2f2;
+  color: #524d7d;
+  border: 2px solid #a88beb;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-icons a img {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/*SECAO 1*/
+
+.secao1 {
+  width: 100%;
+  height: 650px;
+  background-color: #fff2f2;
+  padding: 300px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f4a261;
+  gap: 24px;
+}
+
+.secao1 .texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secao1 h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.secao1 .botao {
+  background-color: #f4a261;
+  color: #fff2f2;
+  padding: 14px 32px;
+  font-size: 60px;
+  border-radius: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  width: max-content;
+  transition: background-color 0.3s;
+}
+
+.secao1 .botao:hover {
+  background-color: #e09150;
+  cursor: pointer;
+}
+
+.secao1 .imagem {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.secao1 .imagem img {
+  max-height: 580px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/*FIM SEÇÃO 1*/
+
+/*INICIO SEÇÃO 2*/
+
+.secao2 {
+  width: 100%;
+  padding: 60px 80px;
+  background-color: #FFF8F0;
+  color: #000;
+  box-sizing: border-box;
+  text-align: center; /* Centraliza todo o conteúdo */
+}
+
+.secao2 h2 {
+  font-size: 50px;
+  color: #F4A261;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.secao2 h3 {
+  font-size: 30px;
+  color: #F4A261;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.secao2 .textoescrito {
+  font-size: 22px;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto 20px auto; /* Centraliza horizontalmente */
+  text-align: justify; /* Para leitura mais confortável */
+}
+
+.secao2 .destaque {
+  font-size: 32px;
+  color: #F4A261;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.secao2 ul {
+  font-size: 22px;
+  line-height: 1.6;
+  list-style: disc;
+  margin: 0 auto 20px auto;
+  max-width: 850px;
+  text-align: left; /* Lista fica alinhada à esquerda */
+}
+
+.secao2 .dados-doacao {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.secao2 .pix {
+  color: #000;
+}
+
+.secao2 .contato {
+  color: #E76F51;
+}
+
+/*FIM SEÇÃO 2*/
+
+
+
+/*INICIO SECÃO 4 e 5 */
+.secao4 {
+  background-color: #f7f0e8; /* bege clarinho */
+  padding: 60px 80px;
+  font-family: "Londrina Solid", sans-serif;
+  color: #F4A261;
+}
+
+.secao4 h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.conteudo-maltratos {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#gatodomaltratos img {
+  width: 250px;
+  border-radius: 16px;
+}
+
+/* Parágrafo da seção 4 */
+.secao4 p {
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #000; /* texto escuro pra leitura */
+}
+
+/* Seção 5 */
+.seçao5 {
+  background-color: #FF9077; /* laranja salmão claro */
+  padding: 40px 80px;
+  font-family: "Londrina Solid", sans-serif;
+  color: #000;
+}
+
+.seçao5 h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.seçao5 p.textoescrito {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/*FIM SECÃO 4 e 5*/
+
+/*SEÇÃO DOS CARD*/
+.secao6 {
+  background-color: #fff8f0; /* tom claro suave */
+  padding: 60px 80px;
+  box-sizing: border-box;
+  font-family: "Londrina Solid", sans-serif;
+  text-align: center;
+  color: #f4a261;
+}
+
+.secao6 h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.secao6 .cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cards {
+  margin: 0;
+}
+
+.cards {
+  background-color: #ffe8d6;
+  border-radius: 16px;
+  padding: 20px;
+  width: 280px;
+  height: 500px; /* altura mais longa */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cards img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cards h3 {
+  font-size: 24px;
+  margin: 12px 0 4px 0;
+  color: #f4a261;
+}
+
+.cards p.textoescrito {
+  font-size: 16px;
+  color: #6b4f4f;
+  line-height: 1.4;
+  margin: 4px 0;
+}
+
+.cards button {
+  background-color: #f4a261;
+  border: none;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 12px;
+}
+
+.cards button:hover {
+  background-color: #e07b39;
+}
+
+#botaocarregarmais {
+  margin-top: 40px;
+  background-color: #f4a261;
+  border: none;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#botaocarregarmais:hover {
+  background-color: #e07b39;
+}
+/*FIM SEÇÃO DO CARD*/
+
+
+/*FOOTER*/
+footer {
+  background-color: #524d7d; 
+  color: #ffffff; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-top: 5px solid #a076f9; 
+  font-size: 0.9rem;
+}
+
+footer img {
+  height: 35px;
+  width: 35px;
+}
+
+#paragrafo_footer {
+  margin: 0;
+}
+
+
+/* Responsividade extra */
+@media (max-width: 600px) {
+  .noticias {
+    padding: 12px;
+    gap: 14px;
+    margin: 12px;
+  }
+  .noticia {
+    padding: 14px 10px 12px 10px;
+  }
+  nav ul {
+    gap: 10px;
+  }
+  footer {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+}
