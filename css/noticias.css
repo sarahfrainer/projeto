@@ -2,8 +2,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-    background-color: #f3f0fa;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif; /*fonte neutra*/
+    background-color: #f3f0fa; /* fundo suave */
     color: #22223b;
 }
 
@@ -13,7 +13,7 @@ nav {
     padding: 12px 0;
     width: 100%;
     box-sizing: border-box;
-    box-shadow: 0 2px 8px rgba(75, 0, 130, 0.08);
+    box-shadow: 0 2px 8px rgba(75, 0, 130, 0.08); /* leve sombra */
 }
 
 nav ul {
@@ -22,7 +22,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 30px; /* espaco entre os links */
 }
 
 nav ul li {
@@ -35,7 +35,7 @@ nav ul li a {
     font-weight: 600;
     padding: 10px 18px;
     border-radius: 6px;
-    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s; /* efeito suave a passar o mouse */
     letter-spacing: 0.5px;
 }
 
@@ -44,7 +44,7 @@ nav ul li a:focus {
     background: #a084ca;
     color: #4B0082;
     box-shadow: 0 2px 8px rgba(106, 13, 173, 0.15);
-    outline: none;
+    outline: none; /* remove contorno padrao no navegador */
 }
 
 /* Footer */
@@ -64,8 +64,8 @@ footer {
 
 /* Grid de notícias */
 .noticias {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: grid; /* usando grid para responsividade automatica */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* ajustar colunas conforme tiver espaço */
     gap: 28px;
     padding: 32px;
     background: #f8f8ff;

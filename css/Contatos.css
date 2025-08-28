@@ -1,32 +1,32 @@
 body {
-      background-color: #f9ecea;
-      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9ecea; /* Cor de fundo suave */
+      font-family: 'Segoe UI', sans-serif; /* Fonte moderna */
       color: #4b3f70;
-      margin: 0;
+      margin: 0; /* Remove margem padrao do navegador */
       padding: 40px;
     }
 
     .container {
-      display: flex;
-      flex-wrap: wrap;
+      display: flex; /* Layout flexivel */
+      flex-wrap: wrap; /* Permitir quebra de linha */
       justify-content: space-between;
       max-width: 1200px;
-      margin: auto;
+      margin: auto; /* centralizar horizontalmente */
     }
 
     .section {
-      width: 45%;
+      width: 45%; /* criar layout de duas colunas */
       margin-bottom: 60px;
     }
 
     h2 {
-      font-size: 28px;
-      font-weight: 800;
+      font-size: 28px; /* tamanho para destaque */
+      font-weight: 800; /* negrito para titulos */
       text-transform: uppercase;
     }
 
     p, li {
-      font-size: 18px;
+      font-size: 18px; /* tamanho confortavel para leitura */
       line-height: 1.6;
     }
 
@@ -35,12 +35,12 @@ body {
     }
 
     a {
-      color: #4b3f70;
+      color: #4b3f70; /* cor do link combinando com o texto */
       text-decoration: none;
     }
 
     a:hover {
-      text-decoration: underline;
+      text-decoration: underline; /* sublinhando ao passar o mouse */
     }
 
     .strikethrough {
@@ -51,7 +51,7 @@ body {
     .email {
       font-size: 24px;
       font-weight: bold;
-      text-decoration: underline;
+      text-decoration: underline; /* sinaliza que é clicavel */
       margin-bottom: 20px;
       display: inline-block;
     }

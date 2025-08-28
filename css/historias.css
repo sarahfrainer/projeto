@@ -1,5 +1,5 @@
 * {
-    font-family: "Inter";
+    font-family: "Inter"; /* inter para todos os elementos*/
     margin: 0px;
 }
 
@@ -10,7 +10,7 @@
 
 .historias {
     background-color: #FFDDC0;
-    padding: 30px;
+    padding: 30px; /*espaçamento interno para o contéudo respirar*/
 }
 
 .estatisticas {
@@ -28,22 +28,22 @@ h2, h3, p {
 }
 
 .flexbox {
-        display: flex;
+        display: flex; /* ativa o layout flex */
         justify-content: space-evenly;
       }
       
       .box {
-        width: 250px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;   
-        text-align: center;    
+        width: 250px; /* largura fixa para cada bloco */
+        display: flex; /* organiza conteudo interno em flexbox */
+        flex-direction: column; /* alinhar na vertical */
+        align-items: center;   /* centralizar na horizontal */
+        text-align: center;    /* centralizar o texto */
       }
       
       .box img {
         width: auto;
         height: 200px;
-        border-radius: 20px;
+        border-radius: 20px; /* bordar arredondaas */
         border: 10px solid black;
         margin-bottom: 12px;
       }

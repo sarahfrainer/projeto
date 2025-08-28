@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,10 @@
 <body>
 <h1>Formulário de Adoção de Animal</h1>
     <form>
+        <!-- required para garantir que o campo vai ser preenchido para o envio-->
         <label for="nome">Qual seu nome completo?</label><br>
         <input type="text" id="nome" name="nome" required><br><br>
-
+        <!-- tel para sugerir teclado numerico em mobile-->
         <label for="contato">Qual seu número para contato?</label><br>
         <input type="tel" id="contato" name="contato" required><br><br>
 
@@ -20,8 +21,9 @@
 
         <label for="idade">Qual a sua idade?</label><br>
         <input type="number" id="idade" name="idade" min="0" required><br>
+        <!-- min para evitar numeros negativos-->
         <small>Se for menor de idade, seus responsáveis devem responder o formulário!</small><br><br>
-
+        
         <label>Todos da sua residência, concordam com a adoção?</label><br>
         <input type="radio" id="concordaSim" name="concorda" value="Sim" required>
         <label for="concordaSim">Sim</label>
@@ -55,7 +57,7 @@
 
         <label for="endereco">Qual seu endereço completo? (Rua, CEP, número da casa e ponto de referência)</label><br>
         <textarea id="endereco" name="endereco" rows="3" required></textarea><br><br>
-
+        <!-- text area para textos mais longos -->
         <label for="renda">Qual a sua renda?</label><br>
         <input type="text" id="renda" name="renda" required><br><br>
 
