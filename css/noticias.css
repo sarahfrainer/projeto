@@ -7,10 +7,17 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #fff2f2;
   font-family: "Londrina Solid", sans-serif;
+  display: flex; /* Transforma o body em um contêiner flexbox */
+  flex-direction: column; /* Organiza os itens (nav, main, footer) em uma coluna */
+}
+
+main {
+  flex-grow: 1; /* Faz o conteúdo principal crescer e empurrar o footer para baixo */
 }
 
 /*BARRA NAV*/
@@ -31,6 +38,9 @@ nav {
   height: 90px;
   border-radius: 50%;
   /* logo arrendoda */
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco */
+  padding: 5px; /* Adiciona um pequeno espaçamento entre a borda do círculo e a imagem */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Sutil sombra para destacar */
 }
 
 .nav-links {
@@ -64,19 +74,22 @@ nav {
 .nav-icons a img {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
   background-color: #ffffff;
   padding: 10px;
   border-radius: 50%;
 }
 
-/* Footer */
+/* footer. */
 footer {
   background-color: #524d7d;
   color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  /* Organiza os itens em linha (um ao lado do outro) */
   align-items: center;
+  /* Alinha verticalmente no centro */
   padding: 10px 40px;
+  /* Espaçamento interno (recomendo 10px para altura) */
   border-top: 5px solid #a076f9;
   font-size: 0.9rem;
 }
@@ -84,12 +97,20 @@ footer {
 footer img {
   height: 35px;
   width: 35px;
+  /* Garante que a imagem não encolha, se necessário */
+  flex-shrink: 0;
+  background-color: #ffffff; /* Fundo branco */
+  padding: 5px; /* Adiciona um pequeno espaçamento entre a borda do círculo e a imagem */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 50%;
 }
 
 #paragrafo_footer {
   margin: 0;
+  /* A margem automática à esquerda empurra o parágrafo para a direita */
+  margin-left: auto;
 }
-
 /* Grid de notícias */
 .noticias {
   display: grid;
@@ -140,26 +161,4 @@ footer img {
  
   
 
-}
-
-/* Responsividade extra */
-@media (max-width: 600px) {
-  .noticias {
-    padding: 12px;
-    gap: 14px;
-    margin: 12px;
-  }
-
-  .noticia {
-    padding: 14px 10px 12px 10px;
-  }
-
-  nav ul {
-    gap: 10px;
-  }
-
-  footer {
-    padding: 10px 8px;
-    font-size: 13px;
-  }
 }
