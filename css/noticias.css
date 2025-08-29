@@ -14,6 +14,7 @@ nav {
     width: 100%;
     box-sizing: border-box;
     box-shadow: 0 2px 8px rgba(75, 0, 130, 0.08); /* leve sombra */
+    font-family: "Londrina Solid", sans-serif;
 }
 
 nav ul {
