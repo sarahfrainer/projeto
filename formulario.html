@@ -1,132 +1,188 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-    <link rel="stylesheet" href="css/formulario.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="nav-logo">
-        <img src="assets/logo.png" alt="Logo" />
-        <!-- alt para acessibilidade -->
-      </div>
+/*USO GERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-      <div class="nav-links">
-        <a href="homepage.html">Home</a>
-        <a href="historias.html">Animais resgatados</a>
-        <a href="noticias.html">Notícias</a>
-        <a href="formulario.html">Adote!</a>
-        <a href="contatos.html">Contatos</a>
-      </div>
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff2f2;
+  font-family: "Londrina Solid", sans-serif;
+}
 
-      <div class="nav-icons">
-        <a href="https://www.instagram.com/acaprabrusquesc?igsh=MTBlcHZkODQwZTVpZQ==" target="_blank">
-          <!-- blank para abrir em uma nova aba-->
-          <img src="./assets/logoInstagram.png" alt="Instagram" />
-        </a>
-        <a href="https://www.google.com.br" target="_blank">
-          <img src="./assets/informationIcon.png" alt="Informações" />
-        </a>
-      </div>
-    </nav>
-  </header>
-<h1>Formulário de Adoção de Animal</h1>
-    <form>
-        <!-- required para garantir que o campo vai ser preenchido para o envio-->
-        <label for="nome">Qual seu nome completo?</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
-        <!-- tel para sugerir teclado numerico em mobile-->
-        <label for="contato">Qual seu número para contato?</label><br>
-        <input type="tel" id="contato" name="contato" required><br><br>
+/*BARRA NAV*/
+nav {
+  background-color: #524d7d;
+  border-bottom: 5px solid #a076f9;
+  color: #ffffff;
+  display: flex; /* flexbox para distribuir itens */
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 16.35vh;
+}
 
-        <label for="animal">Qual animal você tem interesse em adotar?</label><br>
-        <input type="text" id="animal" name="animal" required><br><br>
+.nav-logo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%; /* logo arrendoda */
+}
 
-        <label for="idade">Qual a sua idade?</label><br>
-        <input type="number" id="idade" name="idade" min="0" required><br>
-        <!-- min para evitar numeros negativos-->
-        <small>Se for menor de idade, seus responsáveis devem responder o formulário!</small><br><br>
-        
-        <label>Todos da sua residência, concordam com a adoção?</label><br>
-        <input type="radio" id="concordaSim" name="concorda" value="Sim" required>
-        <label for="concordaSim">Sim</label>
-        <input type="radio" id="concordaNao" name="concorda" value="Não">
-        <label for="concordaNao">Não</label><br><br>
+.nav-links {
+  display: flex;
+  gap: 40px; /* espaço entre links */
+}
 
-        <label>Você tem outros animais?</label><br>
-        <input type="radio" id="outrosSim" name="outros" value="Sim" required>
-        <label for="outrosSim">Sim</label>
-        <input type="radio" id="outrosNao" name="outros" value="Não">
-        <label for="outrosNao">Não</label><br>
-        <label for="quais">Se sim, quantos e quais?</label><br>
-        <input type="text" id="quais" name="quais"><br><br>
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 26px;
+  position: relative;
+}
 
-        <label>São castrados e vacinados?</label><br>
-        <input type="radio" id="castradosSim" name="castrados" value="Sim" required>
-        <label for="castradosSim">Sim</label>
-        <input type="radio" id="castradosNao" name="castrados" value="Não">
-        <label for="castradosNao">Não</label><br><br>
+.nav-links a:hover {
+  background-color: #fff2f2;
+  color: #524d7d;
+  border: 2px solid #a88beb;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: all 0.3s ease; /* efeito suave para passar o mouse */
+}
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
 
-        <label>Você mora em casa ou apartamento?</label><br>
-        <input type="radio" id="moradiaCasa" name="moradia" value="Casa" required>
-        <label for="moradiaCasa">Casa</label>
-        <input type="radio" id="moradiaApto" name="moradia" value="Apartamento">
-        <label for="moradiaApto">Apartamento</label><br>
-        <label>Próprio ou alugado?</label><br>
-        <input type="radio" id="proprio" name="propriedade" value="Próprio" required>
-        <label for="proprio">Próprio</label>
-        <input type="radio" id="alugado" name="propriedade" value="Alugado">
-        <label for="alugado">Alugado</label><br><br>
+.nav-icons a img {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+}
 
-        <label for="endereco">Qual seu endereço completo? (Rua, CEP, número da casa e ponto de referência)</label><br>
-        <textarea id="endereco" name="endereco" rows="3" required></textarea><br><br>
-        <!-- text area para textos mais longos -->
-        <label for="renda">Qual a sua renda?</label><br>
-        <input type="text" id="renda" name="renda" required><br><br>
 
-        <label for="localAnimal">Qual o local em que o animal irá ficar?</label><br>
-        <input type="text" id="localAnimal" name="localAnimal" required><br>
-        <label>A sua casa/apto possui um espaço adequado, telas e/ou cercado?</label><br>
-        <input type="radio" id="espacoSim" name="espaco" value="Sim" required>
-        <label for="espacoSim">Sim</label>
-        <input type="radio" id="espacoNao" name="espaco" value="Não">
-        <label for="espacoNao">Não</label><br><br>
+h1 {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 42px;
+  color: #f4a261;
+}
 
-        <label>O animal terá acesso à rua?</label><br>
-        <input type="radio" id="acessoSim" name="acessoRua" value="Sim" required>
-        <label for="acessoSim">Sim</label>
-        <input type="radio" id="acessoNao" name="acessoRua" value="Não">
-        <label for="acessoNao">Não</label><br><br>
+form {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  padding: 40px;
+  background-color: #fff8f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
-        <label>Você tem condições físicas, mentais e financeiras de manter um animal? Uma boa ração? Visitas ao veterinário? Castração? Passeios?</label><br>
-        <input type="radio" id="condicoesSim" name="condicoes" value="Sim" required>
-        <label for="condicoesSim">Sim</label>
-        <input type="radio" id="condicoesNao" name="condicoes" value="Não">
-        <label for="condicoesNao">Não</label><br><br>
+form label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #524d7d;
+}
 
-        <label>A castração e vacinação do animal é OBRIGATÓRIA, você concorda com isso?</label><br>
-        <input type="radio" id="castracaoSim" name="castracao" value="Sim" required>
-        <label for="castracaoSim">Sim</label>
-        <input type="radio" id="castracaoNao" name="castracao" value="Não">
-        <label for="castracaoNao">Não</label><br><br>
+form input[type="text"],
+form input[type="tel"],
+form input[type="number"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #a076f9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: none;
+}
 
-        <label>Existe uma taxa de adoção colaborativa de R$30,00. Você concorda em contribuir?</label><br>
-        <input type="radio" id="taxaSim" name="taxa" value="Sim" required>
-        <label for="taxaSim">Sim</label>
-        <input type="radio" id="taxaNao" name="taxa" value="Não">
-        <label for="taxaNao">Não</label><br><br>
+form input[type="text"]:focus,
+form input[type="tel"]:focus,
+form input[type="number"]:focus,
+form textarea:focus {
+  border-color: #524d7d;
+  box-shadow: 0 0 6px rgba(82, 77, 125, 0.5);
+}
 
-        <button type="submit">Enviar</button>
-    </form>  
-    <footer>
-    <img src="./assets/logo.png" alt="Logo" width="35px" />
-    <p id="paragrafo_footer">
-      Você pode ajudar! Seja um voluntário, adote ou faça doações
-    </p>
-  </footer>
+form small {
+  font-size: 14px;
+  color: #777;
+  display: block;
+  margin-bottom: 16px;
+}
+
+form input[type="radio"] {
+  margin-right: 6px;
+}
+
+form label[for*="Sim"],
+form label[for*="Nao"],
+form label[for*="Casa"],
+form label[for*="Apartamento"],
+form label[for*="Próprio"],
+form label[for*="Alugado"] {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+form input[type="radio"] {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+form label {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+form button {
+  display: block;
+  margin: 30px auto 0;
+  background-color: #f4a261;
+  color: #fff2f2;
+  padding: 14px 40px;
+  font-size: 22px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #e09150;
+}
+
+footer {
+  background-color: #524d7d;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-top: 5px solid #a076f9;
+  font-size: 0.9rem;
+}
+
+footer img {
+  height: 35px;
+  width: 35px;
+}
+
+#paragrafo_footer {
+  margin: 0;
+}
+
+
+
+
  
 </body>
 </html>
