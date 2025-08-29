@@ -37,6 +37,12 @@ Página onde o usuário é levado a preencher um formulário com seus dados e os
 ![](./assets/formulario.png)
 
 
+## Contato
+Página dedicada a informações de contato da instituição.
+
+![](./assets/contato.png)
+
+
 ## Como contribuir
 
 ### Desenvolvimento
@@ -117,6 +123,13 @@ Crie um Pull Request
       </a>
       <br>
       <a href="https://github.com/FelipeIBernardino/">Felipe</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/lucasviveiross">
+        <img src="https://avatars.githubusercontent.com/u/201287957?v=4" width="120" height="120" style="border-radius:50%;" />
+      </a>
+      <br>
+      <a href="https://github.com/lucasviveiross/">Lucas</a>
     </td>
   </tr>
 </table>
