@@ -66,17 +66,23 @@
 
 /* Footer */
 footer {
-    background: #4B0082;
-    color: #fff;
-    text-align: right;
-    padding: 18px 24px;
-    font-size: 15px;
-    width: 100%;
-    box-sizing: border-box;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    letter-spacing: 0.3px;
-    box-shadow: 0 -2px 8px rgba(75, 0, 130, 0.08);
+  background-color: #524d7d; 
+  color: #ffffff; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-top: 5px solid #a076f9; 
+  font-size: 0.9rem;
+}
+
+footer img {
+  height: 35px;
+  width: 35px;
+}
+
+#paragrafo_footer {
+  margin: 0;
 }
 
 /* Grid de notícias */
@@ -144,3 +150,5 @@ footer {
         font-size: 13px;
     }
 }
+
+
