@@ -124,10 +124,10 @@ footer img {
       
       .box img {
         width: auto;
-        height: 200px;
+        height: 250px;
         border-radius: 20px; /* bordar arredondaas */
-        border: 10px solid black;
-        margin-bottom: 12px;
+        border: 10px solid #fff2f2;
+        margin-bottom: 20px;
       }
       
       .box h3 {
