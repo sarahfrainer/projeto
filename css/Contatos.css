@@ -78,12 +78,14 @@ nav {
 }
 
 main {
-  flex: 1;
+  flex: 1; /* Mantém o main preenchendo o espaço disponível */
+  display: flex; /* Habilita o Flexbox */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: center; /* Alinha os itens horizontalmente no centro */
 }
 
 .inicio {
   max-width: 900px;
-  margin: 40px auto;
   padding: 20px;
 }
 
@@ -91,8 +93,7 @@ main {
 .Em {
   background: #fff2f2;
   padding: 20px;
-  margin-bottom: 20px;
-
+  line-height: 2; /* Aumenta o espaçamento entre as linhas */
 }
 
 .section h2,

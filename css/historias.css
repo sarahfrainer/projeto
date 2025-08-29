@@ -1,16 +1,23 @@
 .titulo_2 {
     font-family: 'Londrina Solid', cursive;
+    font-size: 2.5rem; 
     
 }
 
 .historias {
-  background-color: #fff2f2;
-    padding: 30px; /*espaçamento interno para o contéudo respirar*/
+  background-color:  #ffe8d6;
+   padding: 50px; /*espaçamento interno para o contéudo respirar*/
+   font-size: 1.5rem; 
 }
 
 .estatisticas {
     background-color: #FFF2F2;
     padding: 30px;
+    font-size: 1.2rem; 
+}
+
+.paragrafo {
+  font-size: 1.2rem; 
 }
 
 h2, h3, p {
@@ -145,7 +152,6 @@ footer img {
       }
       
       .box p {
-        font-size: 14px;
         max-width: 90%;
       }
 
