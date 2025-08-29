@@ -1,49 +1,69 @@
+/*USO GERAL*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
+html,
 body {
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fff2f2;
+  font-family: "Londrina Solid", sans-serif;
 }
 
-.navbar {
-  display: flex;
+/*BARRA NAV*/
+nav {
+  background-color: #524d7d;
+  border-bottom: 5px solid #a076f9;
+  color: #ffffff;
+  display: flex; /* flexbox para distribuir itens */
   align-items: center;
-  justify-content: center;
-  gap: 20px;
-  background-color: #2c3e50;
-  padding: 0px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  justify-content: space-between;
+  padding: 0 40px;
   height: 16.35vh;
 }
 
-.navbar img {
+.nav-logo img {
   width: 90px;
   height: 90px;
+  border-radius: 50%; /* logo arrendoda */
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px; /* espaço entre links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 26px;
+  position: relative;
+}
+
+.nav-links a:hover {
+  background-color: #fff2f2;
+  color: #524d7d;
+  border: 2px solid #a88beb;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: all 0.3s ease; /* efeito suave para passar o mouse */
+}
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-icons a img {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  padding: 10px;
   border-radius: 50%;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 26px;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: #f1c40f;
-}
-
-.navbar, .navbar a {
-  font-family: 'Londrina Solid', cursive, sans-serif;
-}
 
 .inicio {
   max-width: 900px;

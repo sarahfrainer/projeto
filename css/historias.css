@@ -1,8 +1,3 @@
-* {
-    font-family: "Inter"; /* inter para todos os elementos*/
-    margin: 0px;
-}
-
 .titulo_2 {
     font-family: 'Londrina Solid', cursive;
     
@@ -27,30 +22,42 @@ h2, h3, p {
     margin-bottom: 40px;
 }
 
+/*USO GERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff2f2;
+  font-family: "Londrina Solid", sans-serif;
+}
+
+/*BARRA NAV*/
 nav {
   background-color: #524d7d;
   border-bottom: 5px solid #a076f9;
   color: #ffffff;
-  display: flex;
+  display: flex; /* flexbox para distribuir itens */
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
   height: 16.35vh;
-  position: relative;
 }
 
 .nav-logo img {
   width: 90px;
   height: 90px;
-  border-radius: 50%;
+  border-radius: 50%; /* logo arrendoda */
 }
 
 .nav-links {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
-  gap: 40px;
+  gap: 40px; /* espaço entre links */
 }
 
 .nav-links a {
@@ -58,7 +65,6 @@ nav {
   color: #ffffff;
   font-size: 26px;
   position: relative;
-  font-family: "Londrina Solid", sans-serif;
 }
 
 .nav-links a:hover {
@@ -67,7 +73,19 @@ nav {
   border: 2px solid #a88beb;
   padding: 2px 6px;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /* efeito suave para passar o mouse */
+}
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-icons a img {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .flexbox {
