@@ -188,6 +188,23 @@ footer img {
 #paragrafo_footer {
   margin: 0;
 }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 
 
 
