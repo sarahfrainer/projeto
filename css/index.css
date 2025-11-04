@@ -374,20 +374,39 @@ footer img {
 
 
 /* Responsividade extra */
-@media (max-width: 600px) {
-  .noticias {
-    padding: 12px;
-    gap: 14px;
-    margin: 12px;
+
+@media (max-width: 768px) {
+  /* Header compacto e menu quebrando linha */
+  nav {
+    height: auto;
+    padding: 12px 16px;
+    flex-direction: column;
+    gap: 12px;
   }
-  .noticia {
-    padding: 14px 10px 12px 10px;
+  .nav-logo img { width: 64px; height: 64px; }
+  .nav-links { flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .nav-links a { font-size: 18px; padding: 2px 6px; border: 2px solid transparent; }
+  .nav-links a:hover { border-color: #a88beb; border-radius: 4px; }
+
+  
+  .secao1 {
+    height: auto;
+    padding: 24px;
+    flex-direction: column;
+    gap: 16px;
   }
-  nav ul {
-    gap: 10px;
-  }
-  footer {
-    padding: 10px 8px;
-    font-size: 13px;
-  }
+  .secao1 h2 { font-size: 28px; margin-bottom: 12px; }
+  .secao1 .botao { font-size: 20px; padding: 10px 20px; }
+  .secao1 .imagem img { max-height: 220px; width: 100%; object-fit: cover; }
+
+ 
+  .secao2 { padding: 32px 16px; }
+  .secao2 .textoescrito, .secao2 ul { font-size: 18px; max-width: 100%; }
+
+  .secao6 { padding: 32px 16px; }
+  .secao6 .cards-container { gap: 16px; }
+  .cards { width: 100%; max-width: 320px; height: auto; }
+
+  /* Footer em coluna */
+  footer { flex-direction: column; text-align: center; gap: 8px; padding: 12px 16px; }
 }
