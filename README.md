@@ -11,7 +11,7 @@
 
 
 ## GitHub Pages
-Você pode conferir o GitHub Pages acessando esse link :  https://www.google.com.br
+Você pode conferir o GitHub Pages acessando esse link :  https://sarahfrainer.github.io/projeto/
 
 
 ## Site
