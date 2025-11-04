@@ -375,38 +375,153 @@ footer img {
 
 /* Responsividade extra */
 
-@media (max-width: 768px) {
-  /* Header compacto e menu quebrando linha */
+@media (max-width: 1024px) {
+  /* ----- CABEÇALHO ----- */
   nav {
     height: auto;
-    padding: 12px 16px;
+    padding: 12px 20px;
     flex-direction: column;
+    align-items: center;
     gap: 12px;
   }
-  .nav-logo img { width: 64px; height: 64px; }
-  .nav-links { flex-wrap: wrap; gap: 12px; justify-content: center; }
-  .nav-links a { font-size: 18px; padding: 2px 6px; border: 2px solid transparent; }
-  .nav-links a:hover { border-color: #a88beb; border-radius: 4px; }
 
-  
+  .nav-logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 20px;
+    padding: 4px 8px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    border-color: #a88beb;
+    color: #524d7d;
+    background-color: #fff2f2;
+  }
+
+  .nav-icons {
+    gap: 12px;
+  }
+
+  .nav-icons a img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* ----- HERO (seção inicial) ----- */
   .secao1 {
-    height: auto;
-    padding: 24px;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .secao1 h2 {
+    font-size: clamp(24px, 5vw, 36px);
+    margin-bottom: 16px;
+  }
+
+  .secao1 .botao {
+    font-size: 20px;
+    padding: 12px 24px;
+  }
+
+  .secao1 .imagem img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 16px;
+  }
+
+  /* ----- SEÇÃO SOBRE ----- */
+  .secao2 {
+    padding: 40px 20px;
+  }
+
+  .secao2 h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .secao2 .textoescrito,
+  .secao2 ul {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  /* ----- CARDS ----- */
+  .secao6 {
+    padding: 40px 20px;
+  }
+
+  .secao6 .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
   }
-  .secao1 h2 { font-size: 28px; margin-bottom: 12px; }
-  .secao1 .botao { font-size: 20px; padding: 10px 20px; }
-  .secao1 .imagem img { max-height: 220px; width: 100%; object-fit: cover; }
 
- 
-  .secao2 { padding: 32px 16px; }
-  .secao2 .textoescrito, .secao2 ul { font-size: 18px; max-width: 100%; }
+  .cards {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
 
-  .secao6 { padding: 32px 16px; }
-  .secao6 .cards-container { gap: 16px; }
-  .cards { width: 100%; max-width: 320px; height: auto; }
+  .cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
 
-  /* Footer em coluna */
-  footer { flex-direction: column; text-align: center; gap: 8px; padding: 12px 16px; }
+  /* ----- RODAPÉ ----- */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    padding: 16px;
+    font-size: 0.9rem;
+  }
+
+  footer img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* === MICROAJUSTE PARA TELAS MUITO PEQUENAS (CELULARES <=480px) === */
+@media (max-width: 480px) {
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .secao1 h2 {
+    font-size: 22px;
+  }
+
+  .secao1 .botao {
+    font-size: 18px;
+    padding: 10px 18px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
 }
